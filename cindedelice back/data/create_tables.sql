@@ -54,9 +54,10 @@ CREATE TABLE Movies (
     name TEXT NOT NULL,
     picture TEXT,
     anecdote TEXT,
+    trailer_url TEXT,
     category_id INTEGER REFERENCES Category(id),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE Recipes (
